@@ -15,3 +15,7 @@
     max-height: calc(100vh - 24px);
     z-index: 1200;
   }
+
+ .Modal img {
+  object-fit: cover;
+} 
