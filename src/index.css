@@ -12,7 +12,7 @@ html {
 
 body {
   margin: 0;
-  font-family: Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  font-family: Roboto, Oxygen-Sans, Ubuntu,'Helvetica Neue', sans-serif;
   color: #212121;
   background-color: #fff;
   -webkit-font-smoothing: antialiased;
