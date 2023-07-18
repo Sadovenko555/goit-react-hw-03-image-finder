@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import { createPortal } from 'react-dom';
 import PropTypes from 'prop-types';
-import './Modal.module.css';
+import styles from './Modal.module.css';
 
 const modalRoot = document.querySelector('#modal-root');
 
@@ -28,8 +28,8 @@ export class Modal extends Component {
 
   render() {
     return createPortal(
-      <div className="Overlay" onClick={this.handleBackDropClick}>
-        <div className="Modal">
+      <div className={styles.Overlay} onClick={this.handleBackDropClick}>
+        <div className={styles.Modal}>
           <img src={this.props.largeImageURL} alt="" />
         </div>
       </div>,
@@ -40,5 +40,5 @@ export class Modal extends Component {
 
 Modal.propTypes = {
   onClose: PropTypes.func,
-  largeImageUrl: PropTypes.string.isRequired,
+  largeImageURL: PropTypes.string.isRequired,
 };
