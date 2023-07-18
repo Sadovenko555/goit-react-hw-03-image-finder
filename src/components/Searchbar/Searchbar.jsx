@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { FiSearch } from 'react-icons/fi';
-import './Searchbar.css';
+import './Searchbar.module.css';
 import PropTypes from 'prop-types';
 
 export class Searchbar extends Component {
